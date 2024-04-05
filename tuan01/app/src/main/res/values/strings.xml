@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">Tuan01</string>
+    <string name="one">ONE</string>
+    <string name="two">TWO</string>
+    <string name="three">THREE</string>
+    <string name="four">FOUR</string>
+    <string name="five">FIVE</string>
+    <string name="six">SIX</string>
+    <string name="seven">SEVEN</string>
+    <string name="eight">EIGHT</string>
+    <string name="nine">NINE</string>
+
+
+    <string name="newContact">New Contact</string>
+    <string name="mobile">Mobile</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="sendEmail">Send Email</string>
+    <string name="home">Home</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="otherInformation">Other Information</string>
+    <string name="ringtone">Ringtone</string>
+    <string-array name="ringtoneList">
+        <item>Default</item>
+        <item>Ringtone 1</item>
+        <item>Ringtone 2</item>
+        <item>Ringtone 3</item>
+        <item>Ringtone 4</item>
+        <item>Ringtone 5</item>
+    </string-array>
+    <string name="sendCallDirectly">Send calls directly to voicemail</string>
+    <string name="moreInfo">More Info</string>
+    <string name="save">Save</string>
+    <string name="discardChanges">Discard Changes</string>
+
+    <string-array name="names">
+        <item>Tèo</item>
+        <item>Tý</item>
+        <item>Bin</item>
+        <item>Bo</item>
+    </string-array>
 </resources>

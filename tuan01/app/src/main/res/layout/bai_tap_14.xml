@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:gravity="center"
+        android:text="Thông tin cá nhân"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/tlInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/trFullname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txvFullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họ Tên:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingEnd="20dp"/>
+
+            <EditText
+                android:id="@+id/edtFullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Le Minh Bao"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trIdentify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txvIdentify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CCCD:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingEnd="20dp"/>
+
+            <EditText
+                android:id="@+id/edtIdentify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="123456789"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txvTitleCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:text="Bằng cấp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rgCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbIntermediateLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Trung Cấp" />
+
+        <RadioButton
+            android:id="@+id/rbCollege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cao Đẳng" />
+
+        <RadioButton
+            android:id="@+id/rbUniversity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Đại Học" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txvFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:text="Sở Thích"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/llTitleFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chbReadBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đọc sách" />
+
+        <CheckBox
+            android:id="@+id/chbReadNewsPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đọc báo" />
+
+        <CheckBox
+            android:id="@+id/chbReadCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đọc Code" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvtTitleAdditionalInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:text="Thông Tin Bổ Sung"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtMultiLineAdditionalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="GỬI THÔNG TIN" />
+</LinearLayout>

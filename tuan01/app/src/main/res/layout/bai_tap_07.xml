@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:weightSum="63">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:text="@string/newContact"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="@string/mobile"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/tvMobile"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/phoneNumber"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnDeletePhoneNumber"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/tvPhoneNumber"
+            android:backgroundTint="#FFFFFF"
+            app:icon="@android:drawable/ic_delete"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="30dp"
+            app:iconTint="#FF0000" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:text="@string/sendEmail"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="@string/home"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tvEmailAddress"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/tvHome"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/emailAddress"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnDeleteEmailAddress"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/tvEmailAddress"
+            android:backgroundTint="#FFFFFF"
+            app:icon="@android:drawable/ic_delete"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="30dp"
+            app:iconTint="#FF0000" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:text="@string/otherInformation"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/tvRingtone"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/black"
+            android:gravity="center_vertical"
+            android:text="@string/ringtone"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spRingtone"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/tvRingtone"
+            android:background="@color/white"
+            android:ems="10"
+            android:entries="@array/ringtoneList"
+            android:inputType="text"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/tvSendCallDirectly"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/black"
+            android:gravity="center_vertical"
+            android:text="@string/sendCallDirectly"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbSendCallDirectly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/tvSendCallDirectly"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/moreInfo"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:cornerRadius="0dp"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconSize="50dp"
+        app:iconTint="#4CAF50" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#000000">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnDiscardChanges"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:text="@string/discardChanges"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:cornerRadius="0dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BaiTap09_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fahrenheit"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edtFahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Celsius"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edtCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingBottom="10dp"
+        android:text="37"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnConvertToCelsius"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="Convert To Celsius"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            />
+
+        <Button
+            android:id="@+id/btnConvertToFahrenheit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="Convert To Fahrenheit"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="14sp"
+        android:text="Clear"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/gray"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"/>
+</LinearLayout>

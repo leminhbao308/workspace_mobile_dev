@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="Các kiểu lập trình sự kiện"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSoA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="start|center_vertical"
+            android:text="Số a:"
+            android:paddingStart="10dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtSoA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:ems="10"
+            android:inputType="text"
+            android:text="80"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSoB"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="start|center_vertical"
+            android:text="Số b:"
+            android:paddingStart="10dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edtSoB"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:ems="10"
+            android:inputType="text"
+            android:text="33"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="113"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonTong"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Tổng 2 số"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="calcSum"/>
+    <Button
+        android:id="@+id/buttonHieu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Hiệu 2 số"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/buttonTich"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Tích 2 số"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/buttonThuong"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Thương 2 số"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/buttonUCLN"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Ước số chung lớn nhất"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <com.leminhbao.tuan01.ExitButton
+        android:id="@+id/buttonExit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Thoát chương trình"
+        android:textSize="18sp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"/>
+
+</LinearLayout>
